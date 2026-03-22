@@ -17,6 +17,6 @@ public class CountEvenOdds {
 
         CountEvenOdds obj = new CountEvenOdds();
         int[] ans = obj.counter(arr);
-        System.out.println("no of evens" + ans[0] + "\nno of odds" +ans[1]en);
+        System.out.println("no of evens" + ans[0] + "\nno of odds" +ans[1]);
     }
 }
