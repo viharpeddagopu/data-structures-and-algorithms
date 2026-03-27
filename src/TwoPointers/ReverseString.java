@@ -21,6 +21,4 @@ public class ReverseString {
 
         System.out.println("reversed string is: " +reversedString(str));
     }
-
-
 }
