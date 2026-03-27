@@ -44,3 +44,11 @@ public class LongestConsecutiveSequence {
         System.out.println("Longest Consecutive Sequence Length: " + result);
     }
 }
+
+//brute force: sort the array
+
+//better approach
+        //convert the array into a set
+        //find the start element of the sequence -> by checking if there exists an element on the left side of that number in the number line
+        //after finding the start elements, find the length of the sequence by checking if there are any numbers present after that element
+        //return the sequence with the longest length
