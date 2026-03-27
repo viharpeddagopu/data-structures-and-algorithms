@@ -51,7 +51,7 @@ public class TopKFrequentElements {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,1,1,2,2,3};
+        int[] nums = {1,1,1,2,2,2,3,3,3};
         int k = 2;
 
         int[] result = findTopKELements(nums, k);
@@ -61,3 +61,6 @@ public class TopKFrequentElements {
         }
     }
 }
+
+
+//refer this: https://www.youtube.com/watch?v=YPTqKIgVk-k&list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf&index=72
