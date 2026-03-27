@@ -29,3 +29,13 @@ public class ValidAnagram {
             System.out.println("the strings are valid anagrams");
     }
 }
+
+//brute force: sort the 2 strings, if the strings are equal -> anagram
+
+//better solution using hashmap
+//      create 2 frequency counting hashmaps for 2 strings and compare them
+
+//best approach using arrays
+//      create an array of size 26, for first string, increment frequency for each character by 1
+//      then, for 2nd string, decrement frequency by 1 for each character
+//      if the final array has all 0s, then they are valid anagrams
