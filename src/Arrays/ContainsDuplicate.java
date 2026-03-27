@@ -22,3 +22,10 @@ public class ContainsDuplicate {
         System.out.println(obj.hasDuplicate(arr));
     }
 }
+
+//brute force: check each element with the other elements in the array
+//brute force: sort the array, then compare adjacent elements
+
+//Better approach using Hashset:
+//      1. add an element if it is not present in the hashset
+//      2. if the element is present in the hashset, then there is a duplicate
