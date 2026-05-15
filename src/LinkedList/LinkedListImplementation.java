@@ -84,6 +84,6 @@ public class LinkedListImplementation {
 
             temp = temp.next;
         }
-        System.out.println(null);
+        System.out.println("null");
     }
 }
