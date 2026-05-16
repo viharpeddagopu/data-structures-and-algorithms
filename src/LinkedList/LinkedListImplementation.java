@@ -2,7 +2,7 @@ package LinkedList;
 
 public class LinkedListImplementation {
     //node class
-    static class Node{
+    public static class Node{
         int data;
         Node next;
 
