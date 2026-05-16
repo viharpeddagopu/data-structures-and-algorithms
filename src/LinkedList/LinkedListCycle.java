@@ -42,3 +42,32 @@ public class LinkedListCycle {
         System.out.println(hasCycle(head));
     }
 }
+
+
+//alternate better approach
+
+/*
+    // Floyd's Tortoise and Hare Algorithm
+    public static boolean hasCycle(Node head) {
+
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null &&
+                fast.next != null) {
+
+            // move slow by 1 step
+            slow = slow.next;
+
+            // move fast by 2 steps
+            fast = fast.next.next;
+
+            // cycle detected
+            if (slow == fast) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+ */
