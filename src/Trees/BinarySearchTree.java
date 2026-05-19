@@ -41,7 +41,7 @@ public class BinarySearchTree {
          return searchHelper(root, data);
     }
 
-    private boolean searchHelper(Node node, int data){
+    public boolean searchHelper(Node node, int data){
 
         if (node == null)
             return false;
