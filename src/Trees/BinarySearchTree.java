@@ -42,24 +42,27 @@ public class BinarySearchTree {
     }
 
     private boolean searchHelper(Node node, int data){
-         if (root == null)
-             return false;
-         else if (root.data == data) {
-             return true;
-         }
-         else if (root.data > data) {
-             return searchHelper(root.left, data);
-         }
-         else
-             return searchHelper(root.right, data);
+
+        if (node == null)
+            return false;
+
+        else if (node.data == data)
+            return true;
+
+        else if (node.data > data)
+            return searchHelper(node.left, data);
+
+        else
+            return searchHelper(node.right, data);
     }
 
     //remove
     public void remove(int data){
-         if (search(data))
-             removeHelper(root, data);
-         else
-             System.out.println("data not found");
+        if (search(data))
+            root = removeHelper(root, data);
+
+        else
+            System.out.println("data not found");
     }
     private Node removeHelper(Node root, int data){
          if (root == null)
