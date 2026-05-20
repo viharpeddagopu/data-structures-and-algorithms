@@ -26,6 +26,46 @@ public class LowestCommonAncestor {
     }
 
 
+    /*
+    ------------------------------------------------
+    Naive Solution (General Binary Tree Approach)
+    ------------------------------------------------
+
+    public static Node findLCA(Node root,
+                               Node p,
+                               Node q){
+
+        // base case
+        if (root == null ||
+                root == p ||
+                root == q){
+
+            return root;
+        }
+
+        // search both subtrees
+        Node left =
+                findLCA(root.left, p, q);
+
+        Node right =
+                findLCA(root.right, p, q);
+
+        // both non-null => current is LCA
+        if (left != null &&
+                right != null){
+
+            return root;
+        }
+
+        // return whichever side found node
+        return (left != null)
+                ? left
+                : right;
+    }
+
+    */
+
+
     public static void main(String[] args) {
 
         BinarySearchTree tree =
