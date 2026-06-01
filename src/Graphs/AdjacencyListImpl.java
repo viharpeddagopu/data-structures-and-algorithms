@@ -45,3 +45,21 @@ public class AdjacencyListImpl {
         }
     }
 }
+
+
+//to make this an adjacency list with weighted edges
+//just add the edge weight in the class Edge
+
+/*
+static class Edge {
+        int src;
+        int dest;
+        int weight;
+
+        public Edge(int s, int d, int w) {
+            this.src = s;
+            this.dest = d;
+            this.weight = w;
+        }
+    }
+ */
