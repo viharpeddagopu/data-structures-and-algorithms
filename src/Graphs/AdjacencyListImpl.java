@@ -3,7 +3,7 @@ package Graphs;
 import java.util.ArrayList;
 
 public class AdjacencyListImpl {
-    static class Edge {
+    public static class Edge {
         int src;
         int dest;
 
